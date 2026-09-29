@@ -20,11 +20,12 @@
     </ul>
     <h2>Form fields</h2>
     <ul class="g-help-list">
-        <li><b>Session name.</b> Сбрасывает все настройки до значений по умолчанию (только после нажатия кнопки "Сохранить").</li>
-        <li><b>Session lifetime, min.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Autostart.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Transparent SID support.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>SID only uses cookies.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Reset settings.</b> Resets all settings to default values (only after pressing the "Save" button).</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Session name.</b> The name of the session, which is stored in cookies and included in page content URLs. Example session name: PHPSESSID. Only alphanumeric characters are allowed for session names; it is best to use short, clear names—for instance, ones that would be visible to users who have cookie warnings enabled;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Session lifetime (sec).</b> The lifetime (in seconds) of the cookie sent to the client's browser. A value of 0 means the cookie remains valid until the browser is closed. The default value is 0;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Autostart.</b> Starts the session whenever a user accesses the web application;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Transparent SID support.</b> If enabled, PHP automatically appends the session ID (SID) to all relative URLs on the page—this typically occurs when the browser does not support cookies.<br>
+        <u>Important warning:</u> using this option reduces security. The SID in the URL can end up in server logs, browser history, or bookmarks, allowing an attacker to intercept the session ID;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>SID uses cookies only.</b> Determines whether cookies alone can be used to store the session ID on the client side. Enabling this parameter prevents attacks involving the transmission of session IDs within URLs;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Reset settings.</b> Resets all settings to their default values (takes effect only after clicking the "Save" button).</li>
     </ul>
 </article>
